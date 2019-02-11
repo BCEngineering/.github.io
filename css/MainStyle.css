@@ -19,7 +19,4 @@ p {
     padding-top: 20%;
 }
 .jumbotron {
-    background-image: url(../img/Galaxy.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }

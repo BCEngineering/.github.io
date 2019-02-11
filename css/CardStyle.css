@@ -2,11 +2,11 @@
     margin: 150px auto 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 30px;
+    grid-gap: 50px;
 }
 .testimonials .card {
     position: relative;
-    width: 330px;
+    width: 350px;
     margin: 0 auto;
     background: #333;
     padding: 10px;

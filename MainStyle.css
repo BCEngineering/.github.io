@@ -1,0 +1,25 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+p {
+    font-size: 1.15rem;
+}
+.navbar {
+    background: transparent !important;
+    transition: 0.5s;
+}
+.navbar .scrolled {
+    background: #000 !important;
+}
+.container-vertical{
+    height: 100vh;
+}
+
+.text-center-vertical {
+    padding-top: 20%;
+}
+.jumbotron {
+    /*background-image: url(../img/Galaxy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}

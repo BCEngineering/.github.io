@@ -20,6 +20,10 @@ p {
 }
 .jumbotron {
 }
+.row {
+    margin-left: 0;
+    margin-right:0;
+}
 form {
     display: block;
 }

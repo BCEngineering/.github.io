@@ -1,5 +1,10 @@
 body {
     font-family: 'Poppins', sans-serif;
+
+}
+header {
+    position: relative;
+    z-index: 1000000;
 }
 p {
     font-size: 1.15rem;
@@ -8,22 +13,128 @@ p {
     background: transparent !important;
     transition: 0.5s;
 }
-.navbar .scrolled {
+.navbar.scrolled {
     background: #000 !important;
+    transition: 0.5s;
 }
-.container-vertical{
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #000;
+    background: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255,255,255,.8);
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(255,255,255,1);
+}
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:visited {
+    color: rgba(255,255,255,1);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/Galaxy.jpg);
+    background-size: cover;
+    margin-bottom: 0;
+    color: #fff;
+}
+.banner:before, .sec2:before, #contact:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#000, transparent);
+    pointer-events: none;
+}
+.banner:after, .sec2:after, #contact:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(360deg, #000, transparent);
+    pointer-events: none;
+}
+.height100p {
     height: 100vh;
 }
-
-.text-center-vertical {
-    padding-top: 20%;
+.h100 {
+    height: 100%;
 }
-.jumbotron {
+.contentBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    text-align: center;
+    z-index: 10;
 }
-.row {
-    margin-left: 0;
-    margin-right:0;
+.contentBox h1 {
+    font-weight: 800;
+    color: #fff;
+    font-size: 7vw;
+    padding: 50px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 1);
+}
+.sec1 {
+    padding: 200px 0;
+    background: #000;
+    height: 100vh;
+}
+h2 {
+    font-size: 5vw;
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+p {
+    color: #fff;
+}
+.sec2 {
+    position: relative;
+    background: url(../img/Math.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.sec2 h2 {
+    box-shadow: 0 10px 40px rgb(0, 0, 0, 1);
+}
+.btnD1 {
+    background: #262626;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    float: right;
+}
+.sec3 {
+    position: relative;
+    background: #000;
+    height: 100vh;
+}
+.card-header {
+    background: #fff;
+}
+.card-header h3 {
+    color: #000;
 }
 form {
-    display: block;
+    padding-top: 30px;
+}
+.form-group {
+    padding: 10px 0;
+}
+#contact {
+    position: relative;
+    padding: 100px 0;
+    background: url(../img/CIRCUIT.JPG);
+    background-size: cover;
+    min-height: 100vh;
 }

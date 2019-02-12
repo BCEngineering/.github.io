@@ -184,7 +184,7 @@ form {
         min-height: 100vh;
         padding: 100px 0;
     }
-    .contentBox h1, .sec1 h2, .sec2 h2{
+    .contentBox h1, .sec1 h2, .sec2 h2, .sec3 h2{
         font-size: 2rem;
     }
     .navbar-expand-lg .navbar-nav .nav-link {
